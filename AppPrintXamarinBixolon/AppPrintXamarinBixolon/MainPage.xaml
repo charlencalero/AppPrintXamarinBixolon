@@ -4,11 +4,20 @@
              xmlns:local="clr-namespace:AppPrintXamarinBixolon"
              x:Class="AppPrintXamarinBixolon.MainPage">
 
-    <StackLayout>
+    <StackLayout  Orientation="Vertical">
         <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
+    	<Label Text="IMPRESION Xamarin.Forms!" 
            HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+  />
+
+        <Entry x:Name="TextAddress" Text="74:F0:7D:E6:B6:38"></Entry>
+        
+        <Button x:Name="btnOpenService" Text="open" Clicked="OnDeviceOpenClicked"></Button>
+        <Button x:Name="btnCloseService" Text="close" ></Button>
+        
+        <Button x:Name="btnPrintText" Text="Print Text" Grid.Row="0" Clicked="OnPrintTextClicked" />
+        <Button x:Name="btnPrintImagen" Text="Print Image" Grid.Row="0" Clicked="OnPrintImageClicked" />
+        <Button x:Name="btnPrintImagenQR" Text="Print Image QR" Grid.Row="0" Clicked="OnPrint2dCodeClicked" />
     </StackLayout>
 
 </ContentPage>
